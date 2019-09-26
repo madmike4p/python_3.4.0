@@ -8,8 +8,8 @@
     
     <title>Changelog &mdash; Python 3.4.0 documentation</title>
     
-    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -20,21 +20,21 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    <script type="text/javascript" src="../static/jquery.js"></script>
+    <script type="text/javascript" src="../static/underscore.js"></script>
+    <script type="text/javascript" src="../static/doctools.js"></script>
+    <script type="text/javascript" src="../static/sidebar.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="Search within Python 3.4.0 documentation"
-          href="../_static/opensearch.xml"/>
+          href="../static/opensearch.xml"/>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="copyright" title="Copyright" href="../copyright.html" />
     <link rel="top" title="Python 3.4.0 documentation" href="../index.html" />
     <link rel="up" title="What’s New in Python" href="index.html" />
     <link rel="next" title="The Python Tutorial" href="../tutorial/index.html" />
     <link rel="prev" title="What’s New in Python 2.0" href="2.0.html" />
-    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
-    <script type="text/javascript" src="../_static/copybutton.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../static/py.png" />
+    <script type="text/javascript" src="../static/copybutton.js"></script>
     
     
     <script type="text/javascript">
@@ -112,7 +112,7 @@
         <li class="right" >
           <a href="2.0.html" title="What’s New in Python 2.0"
              accesskey="P">previous</a> |</li>
-        <li><img src="../_static/py.png" alt=""
+        <li><img src="../static/py.png" alt=""
                  style="vertical-align: middle; margin-top: -1px"/></li>
         <li><a href="http://www.python.org/">Python</a> &raquo;</li>
         <li>
@@ -5134,7 +5134,7 @@ SSLContext.load_dh_params() method and the ssl.OP_SINGLE_DH_USE option.</li>
 <li><a class="reference external" href="http://bugs.python.org/11006">Issue #11006</a>: Don&#8217;t issue low level warning in subprocess when pipe2() fails.</li>
 <li><a class="reference external" href="http://bugs.python.org/13620">Issue #13620</a>: Support for Chrome browser in webbrowser.  Patch contributed
 by Arnaud Calmettes.</li>
-<li><a class="reference external" href="http://bugs.python.org/11829">Issue #11829</a>: Fix code execution holes in inspect.getattr_static for
+<li><a class="reference external" href="http://bugs.python.org/11829">Issue #11829</a>: Fix code execution holes in inspect.getattrstatic for
 metaclasses with metaclasses. Patch by Andreas Stührk.</li>
 <li><a class="reference external" href="http://bugs.python.org/12708">Issue #12708</a>: Add starmap() and starmap_async() methods (similar to
 itertools.starmap()) to multiprocessing.Pool.  Patch by Hynek Schlawack.</li>
@@ -5148,7 +5148,7 @@ ssl.OP_SINGLE_ECDH_USE option.</li>
 <li><a class="reference external" href="http://bugs.python.org/13635">Issue #13635</a>: Add ssl.OP_CIPHER_SERVER_PREFERENCE, so that SSL servers
 choose the cipher based on their own preferences, rather than on the
 client&#8217;s.</li>
-<li><a class="reference external" href="http://bugs.python.org/11813">Issue #11813</a>: Fix inspect.getattr_static for modules. Patch by Andreas
+<li><a class="reference external" href="http://bugs.python.org/11813">Issue #11813</a>: Fix inspect.getattrstatic for modules. Patch by Andreas
 Stührk.</li>
 <li><a class="reference external" href="http://bugs.python.org/7502">Issue #7502</a>: Fix equality comparison for DocTestCase instances.  Patch by
 Cédric Krier.</li>
@@ -5839,7 +5839,7 @@ of the folded body now ends with a carriage return.</li>
 <li><a class="reference external" href="http://bugs.python.org/11560">Issue #11560</a>: shutil.unpack_archive now correctly handles the format
 parameter. Patch by Evan Dandrea.</li>
 <li><a class="reference external" href="http://bugs.python.org/5870">Issue #5870</a>: Add <a class="reference internal" href="../library/subprocess.html#subprocess.DEVNULL" title="subprocess.DEVNULL"><tt class="xref py py-obj docutils literal"><span class="pre">subprocess.DEVNULL</span></tt></a> constant.</li>
-<li><a class="reference external" href="http://bugs.python.org/11133">Issue #11133</a>: fix two cases where inspect.getattr_static can trigger code
+<li><a class="reference external" href="http://bugs.python.org/11133">Issue #11133</a>: fix two cases where inspect.getattrstatic can trigger code
 execution. Patch by Andreas Stührk.</li>
 <li><a class="reference external" href="http://bugs.python.org/11569">Issue #11569</a>: use absolute path to the sysctl command in multiprocessing to
 ensure that it will be found regardless of the shell PATH. This ensures
@@ -6511,7 +6511,7 @@ functions and the most commonly needed arguments to Popen.</li>
 <h3>This Page</h3>
 <ul class="this-page-menu">
   <li><a href="../bugs.html">Report a Bug</a></li>
-  <li><a href="../_sources/whatsnew/changelog.txt"
+  <li><a href="../sources/whatsnew/changelog.txt"
          rel="nofollow">Show Source</a></li>
 </ul>
 
@@ -6547,7 +6547,7 @@ functions and the most commonly needed arguments to Popen.</li>
         <li class="right" >
           <a href="2.0.html" title="What’s New in Python 2.0"
              >previous</a> |</li>
-        <li><img src="../_static/py.png" alt=""
+        <li><img src="../static/py.png" alt=""
                  style="vertical-align: middle; margin-top: -1px"/></li>
         <li><a href="http://www.python.org/">Python</a> &raquo;</li>
         <li>

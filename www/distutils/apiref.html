@@ -8,8 +8,8 @@
     
     <title>10. API Reference &mdash; Python 3.4.0 documentation</title>
     
-    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -20,21 +20,21 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    <script type="text/javascript" src="../static/jquery.js"></script>
+    <script type="text/javascript" src="../static/underscore.js"></script>
+    <script type="text/javascript" src="../static/doctools.js"></script>
+    <script type="text/javascript" src="../static/sidebar.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="Search within Python 3.4.0 documentation"
-          href="../_static/opensearch.xml"/>
+          href="../static/opensearch.xml"/>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="copyright" title="Copyright" href="../copyright.html" />
     <link rel="top" title="Python 3.4.0 documentation" href="../index.html" />
     <link rel="up" title="Distributing Python Modules (Legacy version)" href="index.html" />
     <link rel="next" title="Installing Python Modules (Legacy version)" href="../install/index.html" />
     <link rel="prev" title="9. Command Reference" href="commandref.html" />
-    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
-    <script type="text/javascript" src="../_static/copybutton.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../static/py.png" />
+    <script type="text/javascript" src="../static/copybutton.js"></script>
     
     
  
@@ -56,7 +56,7 @@
         <li class="right" >
           <a href="commandref.html" title="9. Command Reference"
              accesskey="P">previous</a> |</li>
-        <li><img src="../_static/py.png" alt=""
+        <li><img src="../static/py.png" alt=""
                  style="vertical-align: middle; margin-top: -1px"/></li>
         <li><a href="http://www.python.org/">Python</a> &raquo;</li>
         <li>
@@ -783,8 +783,8 @@ granularity.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="distutils.ccompiler.CCompiler.create_static_lib">
-<tt class="descname">create_static_lib</tt><big>(</big><em>objects</em>, <em>output_libname</em><span class="optional">[</span>, <em>output_dir=None</em>, <em>debug=0</em>, <em>target_lang=None</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#distutils.ccompiler.CCompiler.create_static_lib" title="Permalink to this definition">¶</a></dt>
+<dt id="distutils.ccompiler.CCompiler.createstatic_lib">
+<tt class="descname">createstatic_lib</tt><big>(</big><em>objects</em>, <em>output_libname</em><span class="optional">[</span>, <em>output_dir=None</em>, <em>debug=0</em>, <em>target_lang=None</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#distutils.ccompiler.CCompiler.createstatic_lib" title="Permalink to this definition">¶</a></dt>
 <dd><p>Link a bunch of stuff together to create a static library file. The &#8220;bunch of
 stuff&#8221; consists of the list of object files supplied as <em>objects</em>, the extra
 object files supplied to <a class="reference internal" href="#distutils.ccompiler.CCompiler.add_link_object" title="distutils.ccompiler.CCompiler.add_link_object"><tt class="xref py py-meth docutils literal"><span class="pre">add_link_object()</span></tt></a> and/or
@@ -824,9 +824,9 @@ to search for other shared libraries that *it* depends on at run-time.  (This
 may only be relevant on Unix.)</p>
 <p><em>export_symbols</em> is a list of symbols that the shared library will export.
 (This appears to be relevant only on Windows.)</p>
-<p><em>debug</em> is as for <a class="reference internal" href="../library/functions.html#compile" title="compile"><tt class="xref py py-meth docutils literal"><span class="pre">compile()</span></tt></a> and <a class="reference internal" href="#distutils.ccompiler.CCompiler.create_static_lib" title="distutils.ccompiler.CCompiler.create_static_lib"><tt class="xref py py-meth docutils literal"><span class="pre">create_static_lib()</span></tt></a>,  with the
+<p><em>debug</em> is as for <a class="reference internal" href="../library/functions.html#compile" title="compile"><tt class="xref py py-meth docutils literal"><span class="pre">compile()</span></tt></a> and <a class="reference internal" href="#distutils.ccompiler.CCompiler.createstatic_lib" title="distutils.ccompiler.CCompiler.createstatic_lib"><tt class="xref py py-meth docutils literal"><span class="pre">createstatic_lib()</span></tt></a>,  with the
 slight distinction that it actually matters on most platforms (as opposed to
-<a class="reference internal" href="#distutils.ccompiler.CCompiler.create_static_lib" title="distutils.ccompiler.CCompiler.create_static_lib"><tt class="xref py py-meth docutils literal"><span class="pre">create_static_lib()</span></tt></a>, which includes a <em>debug</em> flag mostly for form&#8217;s
+<a class="reference internal" href="#distutils.ccompiler.CCompiler.createstatic_lib" title="distutils.ccompiler.CCompiler.createstatic_lib"><tt class="xref py py-meth docutils literal"><span class="pre">createstatic_lib()</span></tt></a>, which includes a <em>debug</em> flag mostly for form&#8217;s
 sake).</p>
 <p><em>extra_preargs</em> and <em>extra_postargs</em> are as for <a class="reference internal" href="../library/functions.html#compile" title="compile"><tt class="xref py py-meth docutils literal"><span class="pre">compile()</span></tt></a>  (except of
 course that they supply command-line arguments for the particular linker being
@@ -1992,7 +1992,7 @@ the arguments passed to the <tt class="xref py py-func docutils literal"><span c
 <h3>This Page</h3>
 <ul class="this-page-menu">
   <li><a href="../bugs.html">Report a Bug</a></li>
-  <li><a href="../_sources/distutils/apiref.txt"
+  <li><a href="../sources/distutils/apiref.txt"
          rel="nofollow">Show Source</a></li>
 </ul>
 
@@ -2028,7 +2028,7 @@ the arguments passed to the <tt class="xref py py-func docutils literal"><span c
         <li class="right" >
           <a href="commandref.html" title="9. Command Reference"
              >previous</a> |</li>
-        <li><img src="../_static/py.png" alt=""
+        <li><img src="../static/py.png" alt=""
                  style="vertical-align: middle; margin-top: -1px"/></li>
         <li><a href="http://www.python.org/">Python</a> &raquo;</li>
         <li>
